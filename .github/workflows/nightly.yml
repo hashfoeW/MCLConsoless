@@ -39,7 +39,7 @@ jobs:
         tag_name: nightly
         name: Nightly Client Release
         body: |
-          Requires at least Windows 7 and DirectX 11 compatible GPU to run. Compiled with MSVC v14.44.35207 in Release mode with Whole Program Optimization, as well as `/O2 /Ot /Oi /Ob3 /GF /fp:precise`.
+          Requires at least Windows 7 and DirectX 11 compatible GPU to run. Compiled with "MSVC v14.44.35207" in Release mode with Whole Program Optimization, as well as `/O2 /Ot /Oi /Ob3 /GF /fp:precise`.
         files: |
             LCEWindows64.7z
             ./x64/Release/Minecraft.Client.exe

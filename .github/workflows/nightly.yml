@@ -50,7 +50,7 @@ jobs:
         buildPresetAdditionalArgs: "['--target', 'Minecraft.Client']"
 
     - name: 7z Build
-      run: 7z a -t7z -mx=6 -r LCE${{ matrix.platform }}.7z ./build/${{ env.MATRIX_PLATFORM }}/Minecraft.Client/Release/* "-x!*.ipdb" "-x!*.iobj"
+      run: 7z a -t7z -m0=lzma2 -mx=7 -r LCE${{ matrix.platform }}.7z ./build/${{ env.MATRIX_PLATFORM }}/Minecraft.Client/Release/* "-x!*.ipdb" "-x!*.iobj"
 
     - name: Stage artifacts
       run: |
